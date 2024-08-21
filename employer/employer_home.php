@@ -71,7 +71,7 @@ $jobsResult = mysqli_query($connect, $jobsQuery);
                         echo "<td>" . $row['last_date_of_apply'] . "</td>";
                         echo "<td>
                             <a href='../helper/update.php?update_job_id=" . $row['all_jobs_id'] . "' class='btn btn-info'>Update</a>
-                            <a href='../functions.php?job_delete_id=" . $row['all_jobs_id'] . "' class='btn btn-danger' onclick='return confirm(\"Are you sure to delete?\")'>Delete</a>
+                            <a href='../helper/functions.php?job_delete_id=" . $row['all_jobs_id'] . "' class='btn btn-danger' onclick='return confirm(\"Are you sure to delete?\")'>Delete</a>
                           </td>";
                         echo "</tr>";
                     }

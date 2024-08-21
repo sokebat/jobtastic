@@ -15,7 +15,7 @@
         }
 
         .navbar {
-            background-color: #333;
+            background-color: #000;
             overflow: hidden;
             padding: 10px 20px;
             display: flex;

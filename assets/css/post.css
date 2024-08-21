@@ -14,7 +14,7 @@ html, body {
   .container {
     width: 90%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 100px auto 20px auto;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;

@@ -18,7 +18,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'employer') {
 </head>
 
 <body>
-  <!-- <?php include('../shared/navbar.php'); ?> -->
+  <?php include('../shared/navbar.php'); ?>
 
 
 

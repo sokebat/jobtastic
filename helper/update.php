@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'employer') {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit();
 }
 
@@ -18,7 +18,7 @@ if (isset($_GET['update_job_id'])) {
     if ($result && mysqli_num_rows($result) == 1) {
         $job = mysqli_fetch_assoc($result);
     } else {
-        echo '<script>alert("Job not found!"); window.location.href="employer_home.php";</script>';
+        echo '<script>alert("Job not found!"); window.location.href="../employer/employer_home.php";</script>';
         exit;
     }
 }
@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
     $update_result = mysqli_query($connect, $update_query);
 
     if ($update_result) {
-        echo '<script>alert("Job post updated successfully."); window.location.href="employer_home.php";</script>';
+        echo '<script>alert("Job post updated successfully."); window.location.href="../employer/employer_home.php";</script>';
     } else {
         echo '<script>alert("Error updating job post: ' . mysqli_error($connect) . '");</script>';
     }
@@ -75,10 +75,10 @@ function test_input($data) {
     <title>Update Job Post</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="../assets/css/post.css">
 </head>
 <body>
-    <?php include('navbar.php'); ?>
+    <?php include('../shared/navbar.php'); ?>
 
     <div class="container">
         <h1>Update Job Post</h1>
@@ -163,7 +163,7 @@ function test_input($data) {
     </div>
 
     <div class="footer">
-        <?php include('footer.php'); ?>
+        <?php include('../shared/footer.php'); ?>
     </div>
 </body>
 </html>
