@@ -73,7 +73,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'user') {
 <script type="text/javascript">
   function handleApply() {
     alert('Application submitted successfully');
-    window.location.href = 'user_home.php';
+    window.location.href = '../user/user_home.php';
     return false; 
   }
 </script>

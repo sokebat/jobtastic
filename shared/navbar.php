@@ -80,7 +80,7 @@
             <?php
             session_start();
             if (isset($_SESSION['username']) || isset($_SESSION['employer'])) {
-                echo '<a href="./helper/logout.php">Logout</a>';
+                echo '<a href="../helper/logout.php">Logout</a>';
             } else {
             }
             ?>
