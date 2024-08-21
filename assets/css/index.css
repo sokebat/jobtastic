@@ -1,0 +1,136 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; 
+}
+
+.intro-section {
+    background-color: #004080; 
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-section h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.intro-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.job_category {
+    background-color: #ffffff;
+    margin: 40px 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job_category h3 {
+    color: #004080;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.job_category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.job_category ul li {
+    margin-bottom: 15px;
+}
+
+.job_category ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e6f2ff; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.job_category ul li a:hover {
+    background-color: #004080; 
+    color: white;
+}
+
+.login-section {
+    background-color: #ffffff;
+    margin: 40px 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-section h2 {
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.login-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+.login-buttons {
+    margin-top: 20px;
+}
+
+.login-buttons a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #333; 
+    transition: background-color 0.3s ease;
+}
+
+.login-buttons a:hover {
+    background-color: #555; 
+}
+
+.login-buttons a:nth-child(2) {
+    background-color: #ff5733; 
+}
+
+.login-buttons a:nth-child(2):hover {
+    background-color: #c70039; 
+}
+
+footer {
+    background-color: #004080; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; 
+}
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px; 
+    position: fixed; 
+    width: 98%; 
+    top: 0;
+    z-index: 1000;
+}
